@@ -1,0 +1,94 @@
+.loadpages {
+  opacity: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #eee;
+  overflow: hidden;
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+  z-index: 50;
+}
+
+.loadpages .page1 {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/loading/2019-12-27-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.loadpages .page1 .load_line {
+  position: relative;
+  width: 425px;
+  height: 35px;
+  border: 1px solid #f4c53d;
+  text-align: center;
+  line-height: 25px;
+  text-align: right;
+}
+
+.loadpages .page1 .load_line #bee_img {
+  position: absolute;
+  top: -100px;
+  left: 0%;
+  width: 88px;
+  height: 100px;
+  z-index: 250;
+}
+
+@media (max-width: 576px) {
+  .loadpages .page1 .load_line {
+    width: 360px;
+  }
+}
+
+@media (max-width: 360px) {
+  .loadpages .page1 .load_line {
+    width: 320px;
+  }
+}
+
+.loadpages .page1 .load_line #load_line_txt {
+  display: block;
+  margin-top: 10px;
+  position: relative;
+  z-index: 100;
+  color: #eec935;
+}
+
+.loadpages .page1 .load_line #load_line_content {
+  top: 0;
+  display: block;
+  width: 0;
+  height: 100%;
+  padding: 5px;
+}
+
+.loadpages .page1 .load_line #load_line_content img {
+  position: relative;
+  top: -3px;
+  width: 100%;
+  height: 100%;
+}
+
+#load_line_content .txt {
+  margin-top: 50px;
+}
+/*# sourceMappingURL=loading.css.map */
